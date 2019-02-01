@@ -3,9 +3,9 @@ Exam 3, problem 1.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Trey Kline.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -139,6 +139,15 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
+    num1=0
+    num2=1
+    while True:
+        new = num1+num2
+        if new>=n:
+            return num2
+            break
+        num1 = num2
+        num2 = new
 
 
 ###############################################################################
