@@ -85,7 +85,13 @@ def shape(n):
     for k in range(n):
         for j in range(lenght):
             print(num, end='')
-        print('*')
+        print('*', end='')
+        num = num+1
+        for j in range(n-lenght):
+            print(j+1, end='')
+        lenght = lenght -1
+        print()
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
